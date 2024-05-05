@@ -1,6 +1,7 @@
 package server_test
 
 import (
+	"GoCloud2/integrationtest"
 	"net/http"
 	"testing"
 

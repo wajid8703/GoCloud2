@@ -1,8 +1,7 @@
-
 package server
 
 import (
-	"handlers"
+	"GoCloud2/handlers"
 )
 
 func (s *Server) setupRoutes() {

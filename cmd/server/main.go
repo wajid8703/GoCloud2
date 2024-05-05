@@ -61,7 +61,7 @@ func start() int {
 		return nil
 	})
 
-	<--ctx.Done()
+	<-ctx.Done()
 	eg.Go(func() error {
 		if err := s.Stop(); err != nil {
 			log.Info("Error stopping server", zap.Error(err))
