@@ -1,7 +1,6 @@
 package model
 
 import (
-	"GoCloud2/model"
 	is2 "github.com/matryer/is"
 	"testing"
 )
@@ -21,7 +20,7 @@ func TestEmail_IsValid(t *testing.T) {
 		for _, test := range tests {
 			t.Run(test.address, func(t *testing.T) {
 				is := is2.New(t)
-				e := model.Email(test.address)
+				e := Email(test.address)
 				is.Equal(test.valid, e.IsValid())
 			})
 		}
